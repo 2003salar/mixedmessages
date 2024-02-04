@@ -4,16 +4,41 @@ html {
 
 body {
     width: 100%;
+    text-align: center;
 }
 
 main {
     font-family: sans-serif;
     margin-bottom: 2rem;
+    
 }
 
 h1 {
     font-family: sans-serif; 
     font-size: 2rem;
+}
+
+button {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.25rem;
+    border: transparent;
+    box-shadow: 0.3rem 0.3rem 0.5rem #A01C36;
+    margin: 3px 5px;
+    background-color: #2B0000;
+    color: #FFF;
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #D43900;
+    transition: background-color 500ms ease-out;
+}
+
+button:active {
+    margin: 0px 0px;
+    box-shadow: 0px 0px;
+    transition: margin 3s linear 0.5s;
 }
 
 footer {
@@ -42,6 +67,7 @@ footer li a {
 .right {
     flex-grow: 1;
 }
+
 .container {
     width: 60%;
     margin: auto;
