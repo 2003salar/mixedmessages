@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px; 
 }
@@ -18,7 +22,11 @@ h1 {
     font-size: 2rem;
 }
 
-button {
+h1 span {
+    font-style: italic;
+}
+
+.generatorButton {
     padding: 1.25rem 2.5rem;
     font-size: 1.25rem;
     border: transparent;
@@ -29,13 +37,13 @@ button {
     border-radius: 0.3rem;
 }
 
-button:hover {
+.generatorButton:hover {
     cursor: pointer;
     background-color: #D43900;
     transition: background-color 500ms ease-out;
 }
 
-button:active {
+.generatorButton:active {
     margin: 0px 0px;
     box-shadow: 0px 0px;
     transition: margin 3s linear 0.5s;
@@ -43,8 +51,6 @@ button:active {
 
 footer {
     background-color: #34474F;
-    position: relative;
-    bottom: 0;
     color: #FFF;
     font-size: 1.25rem;
 }
@@ -57,11 +63,12 @@ footer ul {
 
 footer li {
     list-style: none;
-    margin: 0.3rem
+    margin: 0.3rem;
 }
 
 footer li a {
     color: #FFF;
+
 }
 
 .right {
@@ -71,4 +78,16 @@ footer li a {
 .container {
     width: 60%;
     margin: auto;
+}
+
+
+.randomMessage {
+    color: #A01C36;
+    font-weight: 700;
+}
+
+#result {
+    font-style: italic;
+    font-size: 1.5 rem;
+    line-height: 1.2;
 }
